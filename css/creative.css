@@ -55,6 +55,14 @@ p {
     background-color: #f05f40;
 }
 
+.bg-secondary {
+    background-color: #f27f59;
+}
+
+.bg-light {
+    background-color: #eee;
+}
+
 .bg-dark {
     color: #fff;
     background-color: #222;
