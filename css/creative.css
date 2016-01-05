@@ -63,6 +63,10 @@ p {
     background-color: #eee;
 }
 
+.bg-medium {
+    background-color: #cccccc;
+}
+
 .bg-dark {
     color: #fff;
     background-color: #222;
