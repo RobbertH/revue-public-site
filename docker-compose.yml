@@ -1,0 +1,13 @@
+version: "3"
+services:
+  apache:
+    image: httpd:alpine
+    volumes:
+      - ".:/usr/local/apache2/htdocs"
+      - "./httpd.conf:/usr/local/apache2/conf/httpd.conf"
+      - "/etc/letsencrypt/live/revue.vtk.be/cert.pem:/usr/local/apache2/conf/server.crt:ro"
+      - "/etc/letsencrypt/live/revue.vtk.be/privkey.pem:/usr/local/apache2/conf/server.key:ro"
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
